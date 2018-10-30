@@ -23,7 +23,7 @@ function getColorAtPixel(x, y) {
 }
 
 function getContext() {
-    var c = document.getElementById("screen-saver-canvas");
+    var c = document.getElementById("blobs-canvas");
     return c.getContext("2d");
 }
 
