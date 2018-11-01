@@ -22,8 +22,9 @@ async function run() {
         var color = getColorAtPixel(x, y);
         drawSquare(x, y, color);
         count++;
-        if (count % 100 == 0) {
-            await sleep(1);
+        if (count == 100) {
+            count = 0;
+            await sleep(20);
         }
     }
 }
